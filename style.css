@@ -170,7 +170,27 @@
 .destaque-card {
   position: relative;
 }
-   
+.carregar-mais-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#btn-carregar-mais {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--rosa-principal);
+  color: var(--branco);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#btn-carregar-mais:hover {
+  background: var(--roxo-escuro);
+  transform: translateY(-2px);
+}
+ 
   
   /* ===== MENU GLOBAL ===== */
 .menu-global {
