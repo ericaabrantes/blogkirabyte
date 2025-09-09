@@ -1,0 +1,57 @@
+/* Teaser na index */
+.comunidade-teaser {
+    padding: 3rem 2rem;
+    background: var(--rosa-claro, #fce4ec);
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+  
+  .comunidade-teaser h2 {
+    color: var(--rosa-principal, #e91e63);
+    margin-bottom: 1rem;
+  }
+  
+  .comunidade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .comunidade-card {
+    background: var(--branco);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .comunidade-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .comunidade-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .comunidade-card span {
+    display: block;
+    padding: 0.75rem;
+    font-weight: 600;
+    color: var(--preto-suave);
+  }
+  
+  /* Página dedicada */
+  .comunidade-page {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .comunidade-page h2 {
+    color: var(--rosa-principal, #e91e63);
+    margin-bottom: 1rem;
+  }
+  

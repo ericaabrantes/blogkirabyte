@@ -85,4 +85,87 @@
     color: var(--branco, #fff);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   }
+  .saiba-mais {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-saiba-mais {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--rosa-principal, #e91e63);
+    color: var(--branco);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, box-shadow 0.3s ease;
+  }
+  
+  .btn-saiba-mais:hover {
+    background: #c2185b; /* rosa mais escuro */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  .sobre-blog {
+    padding: 4rem 2rem;
+    background: var(--rosa-claro, #fce4ec);
+    border-radius: 12px;
+    margin: 3rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  
+  .sobre-blog h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--rosa-principal, #e91e63);
+  }
+  
+  .sobre-blog p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--preto-suave);
+    text-align: justify;
+  }
+  .timeline-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  .timeline-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 4px;
+    height: 100%;
+    background: var(--rosa-principal, #e91e63);
+  }
+  
+  .timeline-list li {
+    margin: 2rem 0;
+    padding-left: 60px;
+    position: relative;
+  }
+  
+  .timeline-list li::before {
+    content: "•";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    font-size: 1.5rem;
+    color: var(--rosa-principal, #e91e63);
+  }
+  
+  .timeline-list a {
+    text-decoration: none;
+    color: var(--preto-suave, #2d3436);
+    font-weight: 600;
+  }
+  
+  .timeline-list a:hover {
+    color: var(--roxo-escuro, #7e57c2);
+  }
   

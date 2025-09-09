@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "titulo": "Dia 01 - Executor x Scheduler",
+      "descricao": "Primeiro post do desafio 30 Dias de Airflow 🚀",
+      "link": "posts/airflow-dia01.html"
+    },
+    {
+      "id": 2,
+      "titulo": "Dia 02 - DAGs na prática",
+      "descricao": "Expliquei como funciona a definição e agendamento das DAGs.",
+      "link": "posts/airflow-dia02.html"
+    },
+    {
+      "id": 3,
+      "titulo": "Dia 03 - Orquestração de Tarefas",
+      "descricao": "Post sobre dependências e encadeamento no Airflow.",
+      "link": "posts/airflow-dia03.html"
+    }
+  ]
+  

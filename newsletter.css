@@ -1,0 +1,69 @@
+/* Newsletter Teaser (index) */
+.newsletter-teaser {
+    background: var(--rosa-claro, #fce4ec);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+  
+  .newsletter-teaser h2 {
+    color: var(--rosa-principal, #e91e63);
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter-form input {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    flex: 1 1 260px;
+  }
+  
+  .newsletter-form button {
+    background: var(--rosa-principal, #e91e63);
+    color: var(--branco);
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background: #c2185b;
+  }
+  
+  .saiba-mais {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--roxo-escuro);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .saiba-mais:hover {
+    text-decoration: underline;
+  }
+  
+  /* Página dedicada */
+  .newsletter-page {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .newsletter-page h2 {
+    color: var(--rosa-principal, #e91e63);
+  }
+  
+  .newsletter-page .aviso {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--preto-suave);
+  }
+  
