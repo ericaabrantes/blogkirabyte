@@ -108,7 +108,69 @@
   footer p {
     margin: 0.3rem 0;
   }
+  /* CAtegoria posts */
+  .categorias-menu {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
   
+  .categoria-btn {
+    background: var(--rosa-claro, #fce4ec);
+    border: 1px solid var(--rosa-principal, #e91e63);
+    color: var(--roxo-escuro);
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .categoria-btn:hover {
+    background: var(--rosa-principal, #e91e63);
+    color: var(--branco);
+  }
+  
+  .categoria-btn.active {
+    background: var(--rosa-principal, #e91e63);
+    color: var(--branco);
+    font-weight: bold;
+  }
+/* Campo de busca */
+#busca-posts {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--rosa-principal, #e91e63);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#busca-posts:focus {
+  border-color: var(--roxo-escuro, #7e57c2);
+}
+
+/* Badge de categoria */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--rosa-principal, #e91e63);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.destaque-card {
+  position: relative;
+}
+   
   
   /* ===== MENU GLOBAL ===== */
 .menu-global {

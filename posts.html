@@ -25,12 +25,19 @@
       </nav>
     </div>
   </header>
-
-  <!-- Lista de Posts -->
-  <main class="container blog-destaques">
-    <h2>📚 Todos os Posts</h2>
-    <div id="posts-list" class="destaques-grid"></div>
-  </main>
+  <section id="posts">
+    <div class="container">
+      <h2>📂 Posts do Blog</h2>
+  
+      <!-- Menu de categorias -->
+      <div id="categorias-menu" class="categorias-menu"></div>
+          <!-- Campo de busca -->
+    <input type="text" id="busca-posts" placeholder="Buscar posts..." />
+  
+      <!-- Lista de posts -->
+      <div id="posts-list" class="destaques-grid"></div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -39,7 +46,9 @@
       <p>Visite também: <a href="https://www.ericaignatios.com.br" target="_blank">www.ericaignatios.com.br</a></p>
     </div>
   </footer>
-
+    
+  <script src="posts-categorias.js"></script>
   <script src="posts.js"></script>
+
 </body>
 </html>

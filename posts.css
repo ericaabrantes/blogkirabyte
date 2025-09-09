@@ -19,6 +19,49 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
   }
+  .categorias-menu {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  
+  .categoria-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: var(--rosa-claro, #fce4ec);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .categoria-btn.active {
+    background: var(--rosa-principal, #e91e63);
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .categoria-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .post-card {
+    background: var(--branco);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-4px);
+  }
   
   /* Card de Post */
   .destaque-card {

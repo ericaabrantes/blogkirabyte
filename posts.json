@@ -1,21 +1,34 @@
 [
-    {
-      "id": 1,
-      "titulo": "Dia 01 - Executor x Scheduler",
-      "descricao": "Primeiro post do desafio 30 Dias de Airflow 🚀",
-      "link": "posts/airflow-dia01.html"
-    },
-    {
-      "id": 2,
-      "titulo": "Dia 02 - DAGs na prática",
-      "descricao": "Expliquei como funciona a definição e agendamento das DAGs.",
-      "link": "posts/airflow-dia02.html"
-    },
-    {
-      "id": 3,
-      "titulo": "Dia 03 - Orquestração de Tarefas",
-      "descricao": "Post sobre dependências e encadeamento no Airflow.",
-      "link": "posts/airflow-dia03.html"
-    }
-  ]
-  
+  {
+    "id": 4,
+    "titulo": "🚀 Meu Primeiro Post",
+    "descricao": "Esse é o **primeiro post** escrito em Markdown!",
+    "categoria": "Geral",
+    "data": "2025-09-09T18:32:23.126Z",
+    "link": "posts/teste.html"
+  },
+  {
+    "id": 3,
+    "titulo": "Post sem título",
+    "descricao": "Post no Kirabyte Blog",
+    "categoria": "Geral",
+    "data": "2025-09-09T18:32:23.126Z",
+    "link": "posts/post2.html"
+  },
+  {
+    "id": 2,
+    "titulo": "🔥 Dia 01 - Executor x Scheduler",
+    "descricao": "Publicado em **07/09/2025** | Categoria: *Aprendizado*",
+    "categoria": "Geral",
+    "data": "2025-09-09T18:32:23.125Z",
+    "link": "posts/post1.html"
+  },
+  {
+    "id": 1,
+    "titulo": "🚀 Post de Teste com Data e Categoria",
+    "descricao": "Esse é só um post de exemplo para validar o script automático.",
+    "categoria": "Aprendizado",
+    "data": "2025-09-09T00:00:00.000Z",
+    "link": "posts/post-teste.html"
+  }
+]

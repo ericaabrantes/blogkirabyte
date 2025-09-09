@@ -1,0 +1,26 @@
+{
+  "name": "kirabyte",
+  "version": "1.0.0",
+  "description": "Blog Kirabyte - posts em Markdown convertidos para HTML",
+  "main": "posts.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gerar": "node gerar-posts.js",
+    "build": "npm run gerar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericaabrantes/blogkirabyte.git"
+  },
+  "keywords": ["blog", "markdown", "kirabyte", "static-site"],
+  "author": "Érica Abrantes Ignatios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericaabrantes/blogkirabyte/issues"
+  },
+  "homepage": "https://github.com/ericaabrantes/blogkirabyte#readme",
+  "dependencies": {
+    "marked": "^16.2.1"
+  }
+}
