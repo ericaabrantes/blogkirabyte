@@ -1,0 +1,70 @@
+/* ===== Página de Listagem de Posts ===== */
+
+.blog-destaques {
+    padding: 3rem 2rem;
+    background: var(--rosa-claro, #fce4ec);
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+  
+  .blog-destaques h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--rosa-principal, #e91e63);
+    font-size: 1.8rem;
+  }
+  
+  #posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Card de Post */
+  .destaque-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--branco, #ffffff);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--preto-suave, #2d3436);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .destaque-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .destaque-card h3 {
+    padding: 1rem 1rem 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--roxo-escuro, #7e57c2);
+  }
+  
+  .destaque-card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+    color: var(--preto-suave, #2d3436);
+  }
+  
+  .destaque-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .blog-destaques {
+      padding: 2rem 1rem;
+    }
+  
+    .destaque-card img {
+      height: 140px;
+    }
+  }
+  
