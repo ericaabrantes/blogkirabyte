@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post | Kirabyte Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="post.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">🌸 Kirabyte Blog</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#aprendizado">Aprendizado</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#carreira">Carreira</a></li>
+          <li><a href="#lifestyle">Lifestyle</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo do Post -->
+  <main class="container post-conteudo">
+    <article>
+      <h2>🔥 Como usar o BranchPythonOperator no Airflow</h2>
+      <p class="meta">Publicado em 07/09/2025 | Categoria: Aprendizado</p>
+
+      <p>O <strong>BranchPythonOperator</strong> é um dos operadores mais úteis do Apache Airflow, permitindo controlar o fluxo de execução da DAG com base em condições personalizadas...</p>
+
+      <h3>📌 Exemplo de código</h3>
+      <pre><code>
+from airflow.operators.python import BranchPythonOperator
+
+def decide_task():
+    if True:
+        return "task_a"
+    return "task_b"
+
+branch = BranchPythonOperator(
+    task_id="branch_example",
+    python_callable=decide_task,
+    dag=dag
+)
+      </code></pre>
+
+      <p>Nesse exemplo simples, a execução vai seguir para `task_a` ou `task_b` dependendo da lógica definida.</p>
+
+      <h3>💡 Conclusão</h3>
+      <p>Esse operador é essencial quando você precisa de caminhos diferentes na sua DAG. No <strong>Kirabyte Blog</strong>, vamos explorar cada operador do Airflow em detalhes!</p>
+    </article>
+
+    <div class="post-compartilhar">
+        <span>Compartilhe:</span>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://kirabyte.com.br/post-exemplo" 
+           target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?text=Olha%20esse%20post:%20https://kirabyte.com.br/post-exemplo" 
+           target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://kirabyte.com.br/post-exemplo&text=Olha%20esse%20post!" 
+           target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </div>
+      
+    <!-- Navegação entre posts -->
+    <div class="post-nav">
+      <a href="index.html" class="btn">⬅ Voltar para o Blog</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kirabyte Blog | Criado por Érica Ignatios 🌸</p>
+  </footer>
+</body>
+</html>

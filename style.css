@@ -1,0 +1,107 @@
+:root {
+    --rosa-principal: #ff80ab;
+    --rosa-claro: #fce4ec;
+    --preto-suave: #2d3436;
+    --branco: #fff;
+    --fonte: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    font-family: var(--fonte);
+    margin: 0;
+    background-color: var(--rosa-claro);
+    color: var(--preto-suave);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  
+  /* Header */
+  .site-header {
+    background: var(--rosa-principal);
+    color: var(--branco);
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero */
+  .hero {
+    background: var(--rosa-claro);
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  /* Posts */
+  .posts .post {
+    background: var(--branco);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .post h3 a {
+    color: var(--rosa-principal);
+    text-decoration: none;
+  }
+  
+  .post h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .meta {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--rosa-principal);
+    color: var(--branco);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #e75480;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--rosa-principal);
+    color: var(--branco);
+    margin-top: 2rem;
+  }
+  
