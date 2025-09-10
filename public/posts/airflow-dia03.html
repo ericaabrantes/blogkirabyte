@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎯 Dia 03 de 30 - Desafio de Dados – Versão Airflow | Kirabyte Blog</title>
+  <meta name="description" content="⚙️ Por dentro da arquitetura e componentes do Airflow 🧩🚦">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/posts.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu Global -->
+  <nav class="menu-global">
+    <div class="container">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../posts.html" class="active">Posts</a></li>
+        <li><a href="../sobre-blog.html">Sobre o Blog</a></li>
+        <li><a href="../cursos.html">Cursos</a></li>
+        <li><a href="../guia.html">Guia</a></li>
+        <li><a href="../comunidade.html">Comunidade</a></li>
+        <li><a href="../desafios.html">Desafios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo do Post -->
+  <main class="container post-conteudo">
+    <article>
+      <p class="meta">
+        Publicado em 24 de agosto de 2025 | Categoria: Aprendizado
+         | Desafio: Airflow (Dia 3)
+      </p>
+
+      <img src="../assets/images/desafios/airflow/airflow-dia3.jpg" alt="🎯 Dia 03 de 30 - Desafio de Dados – Versão Airflow" class="post-thumbnail" />
+
+      <div class="post-body">
+        <h1>🎯 Dia 03 de 30 - Desafio de Dados – Versão Airflow</h1>
+<p>⚙️ Por dentro da arquitetura e componentes do Airflow 🧩🚦</p>
+<p>O dia de hoje foi de estruturar melhor o funcionamento interno do <strong>Airflow</strong> — entender seus componentes principais e como ele trabalha por baixo dos panos. 🔍</p>
+<h2>📌 Componentes Principais (Core Components)</h2>
+<ul>
+<li>✅ <strong>Scheduler</strong>: Define quando as tasks devem ser executadas  </li>
+<li>✅ <strong>Executor</strong>: Responsável por como rodar as tasks (Celery, Local, etc)  </li>
+<li>✅ <strong>Webserver</strong>: Interface visual para acompanhar DAGs  </li>
+<li>✅ <strong>Worker</strong>: Executa as tasks (dependendo da arquitetura)  </li>
+<li>✅ <strong>Metadata DB</strong>: Onde o estado das execuções é armazenado</li>
+</ul>
+<h2>📌 Arquiteturas Disponíveis</h2>
+<ul>
+<li>✅ <strong>Sequential Executor</strong> (teste local)  </li>
+<li>✅ <strong>Local Executor</strong>  </li>
+<li>✅ <strong>Celery Executor</strong> (distribuído, o que estou usando com Docker)  </li>
+<li>✅ <strong>Kubernetes Executor</strong> (para ambientes em nuvem)</li>
+</ul>
+<h2>📌 Como o Airflow Funciona</h2>
+<ul>
+<li>✅ Lê arquivos <code>.py</code> da pasta <strong>DAGs</strong>  </li>
+<li>✅ Interpreta as DAGs e agenda execuções  </li>
+<li>✅ Executa as tarefas conforme dependências e <em>schedule</em> definidos</li>
+</ul>
+<h2>✨ Reflexão do Dia</h2>
+<p>Foi como montar um <strong>quebra-cabeça</strong>: cada componente tem um papel claro, e a arquitetura escolhida muda completamente o poder do Airflow.<br>Entender essas engrenagens internas vai me ajudar muito quando for depurar problemas reais em produção.  </p>
+<p>💫💻📚🌸🎯  </p>
+<hr>
+<p>🦋 <strong>Dia 25/08/2025</strong><br>📌 Portfólio: <a href="https://ericaignatios.com.br">ericaignatios.com.br</a><br>📸 Instagram: <a href="https://instagram.com/ericaignatios">@ericaignatios</a><br>💻 GitHub: <a href="https://github.com/ericaabrantes">github.com/ericaabrantes</a>  </p>
+<p>🔗 <a href="https://www.linkedin.com/posts/ericaabrantesignatios_30diasdedados-apacheairflow-dataorchestration-activity-7366962719889014786-3Y_o">Ver post no LinkedIn</a></p>
+
+      </div>
+    </article>
+
+    <!-- Botões de Compartilhamento -->
+    <div class="post-compartilhar">
+      <span>Compartilhe:</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://kirabyte.com.br/airflow-dia03.html" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="https://api.whatsapp.com/send?text=Olha%20esse%20post:%20https://kirabyte.com.br/airflow-dia03.html" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=https://kirabyte.com.br/airflow-dia03.html&text=Olha%20esse%20post!" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+    </div>
+
+    <!-- Navegação -->
+    <div class="post-nav">
+      <a href="../posts.html" class="btn">⬅ Voltar para Posts</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kirabyte Blog | Criado por Érica Abrantes Ignatios 🌸</p>
+    <p>Visite também: <a href="https://www.ericaignatios.com.br" target="_blank">www.ericaignatios.com.br</a></p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

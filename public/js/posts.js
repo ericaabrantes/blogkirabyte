@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     
     
-    
 
     // Render inicial
     renderPosts(posts);
