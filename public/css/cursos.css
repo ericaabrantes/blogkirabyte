@@ -59,4 +59,21 @@
   .btn-ver-mais a:hover {
     background: var(--roxo-escuro);
   }
+  .cursos-page {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
   
+  .cursos-page h2 {
+    color: var(--rosa-principal);
+    margin-bottom: 1rem;
+  }
+  
+  .cursos-page p {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--preto-suave);
+  }
+    

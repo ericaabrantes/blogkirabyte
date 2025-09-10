@@ -78,9 +78,11 @@
   
   .destaque-card img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
+    height: 180px;
+    object-fit: cover;   /* corta sem distorcer */
+    border-bottom: 1px solid #eee;
   }
+  
   
   .destaque-card h3 {
     padding: 1rem 1rem 0.5rem;
@@ -99,6 +101,14 @@
     transform: translateY(-6px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.12);
   }
+  .post-thumbnail {
+    display: block;
+    max-width: 100%;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
   
   /* Responsividade */
   @media (max-width: 768px) {

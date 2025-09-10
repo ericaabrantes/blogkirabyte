@@ -1,4 +1,3 @@
-// gerar-posts.js
 import fs from "fs";
 import path from "path";
 import { marked } from "marked";
@@ -10,15 +9,24 @@ const jsonFile = path.join(process.cwd(), "public/posts.json");
 // Lê todos os .md
 const files = fs.readdirSync(postsDir).filter(f => f.endsWith(".md"));
 
-// Lista de metadados dos posts
 let postsMeta = [];
 
 files.forEach((file, index) => {
   const mdPath = path.join(postsDir, file);
   const mdContent = fs.readFileSync(mdPath, "utf-8");
 
-  // Converte para HTML
-  const htmlContent = marked(mdContent);
+  // Remove linhas de metadados antes de converter para HTML
+  const contentSemMeta = mdContent
+    .split("\n")
+    .filter(l => !l.startsWith("Categoria:") &&
+                 !l.startsWith("Data:") &&
+                 !l.startsWith("Desafio:") &&
+                 !l.startsWith("Dia:") &&
+                 !l.startsWith("Imagem:"))
+    .join("\n");
+
+  // Converte só o conteúdo real em HTML
+  const htmlContent = marked(contentSemMeta);
 
   // Nome do arquivo HTML
   const baseName = file.replace(".md", "");
@@ -30,17 +38,15 @@ files.forEach((file, index) => {
   const titulo = lines[0] ? lines[0].replace(/^# /, "") : "Post sem título";
   const descricao = lines[1] || "Post no Kirabyte Blog";
 
-  // Categoria (linha que começa com "Categoria:")
+  // Categoria
   const categoriaLine = lines.find(l => l.startsWith("Categoria:"));
   const categoria = categoriaLine ? categoriaLine.replace("Categoria:", "").trim() : "Geral";
 
-  // Data (linha que começa com "Data:")
+  // Data
   const dataLine = lines.find(l => l.startsWith("Data:"));
   let dataISO = new Date().toISOString();
   let dataFormatada = new Date().toLocaleDateString("pt-BR", {
-    day: "2-digit",
-    month: "long",
-    year: "numeric"
+    day: "2-digit", month: "long", year: "numeric"
   });
   if (dataLine) {
     const rawDate = dataLine.replace("Data:", "").trim();
@@ -48,14 +54,28 @@ files.forEach((file, index) => {
     if (!isNaN(parsedDate)) {
       dataISO = parsedDate.toISOString();
       dataFormatada = parsedDate.toLocaleDateString("pt-BR", {
-        day: "2-digit",
-        month: "long",
-        year: "numeric"
+        day: "2-digit", month: "long", year: "numeric"
       });
     }
   }
 
-  // Template do post com SEO
+  // Desafio
+  const desafioLine = lines.find(l => l.startsWith("Desafio:"));
+  const desafio = desafioLine ? desafioLine.replace("Desafio:", "").trim() : null;
+
+  // Dia do desafio
+  const diaLine = lines.find(l => l.startsWith("Dia:"));
+  const dia = diaLine ? parseInt(diaLine.replace("Dia:", "").trim(), 10) : null;
+
+  // Imagem principal
+  const imgLine = lines.find(l => l.startsWith("Imagem:"));
+  const imgPath = imgLine ? imgLine.replace("Imagem:", "").trim() : "assets/images/default.png";
+
+  // Caminhos diferentes para HTML e JSON
+  const thumbnailForHtml = `../${imgPath}`;
+  const thumbnailForJson = imgPath;
+
+  // Template do post
   const template = `
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,69 +85,90 @@ files.forEach((file, index) => {
   <title>${titulo} | Kirabyte Blog</title>
   <meta name="description" content="${descricao}">
   
-  <!-- OpenGraph -->
-  <meta property="og:title" content="${titulo} | Kirabyte Blog">
-  <meta property="og:description" content="${descricao}">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://kirabyte.com.br/${outFile}">
-  <meta property="og:site_name" content="Kirabyte Blog">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="${titulo}">
-  <meta name="twitter:description" content="${descricao}">
-
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../post.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/posts.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
+  <!-- Menu Global -->
+  <nav class="menu-global">
     <div class="container">
-      <h1 class="logo">🌸 Kirabyte Blog</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="../posts.html">Posts</a></li>
-        </ul>
-      </nav>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../posts.html" class="active">Posts</a></li>
+        <li><a href="../sobre-blog.html">Sobre o Blog</a></li>
+        <li><a href="../cursos.html">Cursos</a></li>
+        <li><a href="../guia.html">Guia</a></li>
+        <li><a href="../comunidade.html">Comunidade</a></li>
+        <li><a href="../desafios.html">Desafios</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
+
+  <!-- Conteúdo do Post -->
   <main class="container post-conteudo">
     <article>
-      <h2>${titulo}</h2>
-      <p class="meta">Publicado em ${dataFormatada} | Categoria: ${categoria}</p>
-      ${htmlContent}
+      <p class="meta">
+        Publicado em ${dataFormatada} | Categoria: ${categoria}
+        ${desafio ? ` | Desafio: ${desafio}${dia ? ` (Dia ${dia})` : ""}` : ""}
+      </p>
+
+      ${imgPath !== "assets/images/default.png" 
+        ? `<img src="${thumbnailForHtml}" alt="${titulo}" class="post-thumbnail" />` 
+        : ""}
+
+      <div class="post-body">
+        ${htmlContent}
+      </div>
     </article>
+
+    <!-- Botões de Compartilhamento -->
+    <div class="post-compartilhar">
+      <span>Compartilhe:</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://kirabyte.com.br/${outFile}" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="https://api.whatsapp.com/send?text=Olha%20esse%20post:%20https://kirabyte.com.br/${outFile}" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=https://kirabyte.com.br/${outFile}&text=Olha%20esse%20post!" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+    </div>
+
+    <!-- Navegação -->
     <div class="post-nav">
-      <a href="../posts.html" class="btn">⬅ Voltar para o Blog</a>
+      <a href="../posts.html" class="btn">⬅ Voltar para Posts</a>
     </div>
   </main>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Kirabyte Blog | Criado por Érica Ignatios 🌸</p>
+    <p>© 2025 Kirabyte Blog | Criado por Érica Abrantes Ignatios 🌸</p>
+    <p>Visite também: <a href="https://www.ericaignatios.com.br" target="_blank">www.ericaignatios.com.br</a></p>
   </footer>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>`;
 
-  // Salva o HTML
+  // Salva HTML
   fs.writeFileSync(outPath, template, "utf-8");
 
-  // Atualiza metadados
+  // Metadados para posts.json
   postsMeta.push({
     id: index + 1,
     titulo,
     descricao,
     categoria,
     data: dataISO,
-    link: `posts/${outFile}`
+    link: `posts/${outFile}`,
+    desafio,
+    dia,
+    thumbnail: thumbnailForJson
   });
 
   console.log(`✅ Gerado: ${outFile}`);
 });
 
-// Inverte ordem: posts mais recentes primeiro
+// Inverte ordem
 postsMeta = postsMeta.reverse();
 
-// Atualiza o posts.json
+// Atualiza posts.json
 fs.writeFileSync(jsonFile, JSON.stringify(postsMeta, null, 2), "utf-8");
 console.log("📄 posts.json atualizado!");
