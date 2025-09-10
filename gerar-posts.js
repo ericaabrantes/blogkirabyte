@@ -3,9 +3,9 @@ import fs from "fs";
 import path from "path";
 import { marked } from "marked";
 
-const postsDir = path.join(process.cwd(), "posts"); // pasta dos .md
-const outputDir = path.join(process.cwd(), "posts"); // saída .html
-const jsonFile = path.join(process.cwd(), "posts.json");
+const postsDir = path.join(process.cwd(), "posts-md");     // onde ficam os .md
+const outputDir = path.join(process.cwd(), "public/posts"); // saída .html
+const jsonFile = path.join(process.cwd(), "public/posts.json");
 
 // Lê todos os .md
 const files = fs.readdirSync(postsDir).filter(f => f.endsWith(".md"));
