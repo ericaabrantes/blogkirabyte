@@ -116,4 +116,7 @@
     padding: 2rem 1rem;
   }
 
-  .
+  .destaque-card img {
+    height: 140px;
+  }
+}
