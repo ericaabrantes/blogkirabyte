@@ -239,6 +239,39 @@
   position: absolute;
   right: 1rem;
 }
+/*Youtube*/
+.yt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.yt-card {
+  display: block;
+  background: var(--branco);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--preto-suave);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.yt-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.yt-card h3 {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.yt-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
 
 /* Mobile */
 @media (max-width: 768px) {
