@@ -62,4 +62,69 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = `<p>Erro: ${err.message}</p>`;
     }
   });
+ 
+  //Render Destaques posts
+  document.addEventListener("DOMContentLoaded", async () => {
+    const destaquesContainer = document.getElementById("destaques-grid");
+    if (!destaquesContainer) return;
+  
+    try {
+      const res = await fetch("./posts.json");
+      if (!res.ok) throw new Error("Erro ao carregar posts.json");
+  
+      const posts = await res.json();
+  
+      // Filtra só os marcados como destaque
+      const destaques = posts.filter(p => p.destaque);
+  
+      // Se quiser só os 3 primeiros:
+      // const destaques = posts.filter(p => p.destaque).slice(0, 3);
+  
+      destaquesContainer.innerHTML = destaques.map(post => `
+        <a href="${post.link}" class="destaque-card">
+          <img src="${post.thumbnail}" alt="${post.titulo}">
+          <h3>${post.titulo}</h3>
+        </a>
+      `).join("");
+  
+    } catch (err) {
+      destaquesContainer.innerHTML = `<p>Erro: ${err.message}</p>`;
+    }
+  });
+  //Categorias automaticas
+  document.addEventListener("DOMContentLoaded", async () => {
+    const grid = document.getElementById("categorias-grid");
+    if (!grid) return;
+  
+    try {
+      const res = await fetch("./posts.json");
+      if (!res.ok) throw new Error("Erro ao carregar posts.json");
+  
+      const posts = await res.json();
+  
+      // Pega todas as categorias únicas
+      const categorias = [...new Set(posts.map(p => p.categoria).filter(Boolean))];
+  
+      // Ícones sugeridos (pode trocar ou adicionar)
+      const icones = {
+        "Engenharia de Dados": "bi bi-database-fill",
+        "Tutoriais Práticos": "bi bi-terminal-fill",
+        "Carreira & Estudos": "bi bi-mortarboard-fill",
+        "Reflexões Pessoais": "bi bi-chat-left-quote-fill",
+        "Aprendizado": "bi bi-journal-code",
+        "Desafios": "bi bi-lightning-fill"
+      };
+  
+      // Monta os links
+      grid.innerHTML = categorias.map(cat => `
+        <a href="posts.html?categoria=${encodeURIComponent(cat)}" class="categoria-badge">
+          <i class="${icones[cat] || "bi bi-folder-fill"}"></i>
+          ${cat}
+        </a>
+      `).join("");
+    } catch (err) {
+      console.error("Erro ao carregar categorias:", err);
+      grid.innerHTML = "<p>Erro ao carregar categorias 😢</p>";
+    }
+  });
   

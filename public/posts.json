@@ -1,5 +1,41 @@
 [
   {
+    "id": 12,
+    "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
+    "descricao": "Aprendendo passo a passo na prática",
+    "categoria": "Aprendizado",
+    "data": "2025-08-15T00:00:00.000Z",
+    "link": "posts/pipeline-primeiro.html",
+    "desafio": null,
+    "dia": null,
+    "thumbnail": "assets/images/post3.jpg",
+    "destaque": true
+  },
+  {
+    "id": 11,
+    "titulo": "☕ Do Front-end para a Engenharia de Dados",
+    "descricao": "Minha transição de carreira",
+    "categoria": "Lifestyle",
+    "data": "2025-08-25T00:00:00.000Z",
+    "link": "posts/frontend-para-dados.html",
+    "desafio": null,
+    "dia": null,
+    "thumbnail": "assets/images/post3.jpg",
+    "destaque": true
+  },
+  {
+    "id": 10,
+    "titulo": "🔍 Entendendo o Apache Airflow",
+    "descricao": "Primeiros passos com orquestração de workflows",
+    "categoria": "Aprendizado",
+    "data": "2025-08-20T00:00:00.000Z",
+    "link": "posts/airflow-entendendo.html",
+    "desafio": null,
+    "dia": null,
+    "thumbnail": "assets/images/airflow-banner.jpg",
+    "destaque": true
+  },
+  {
     "id": 9,
     "titulo": "🎯 Dia 09 de 30 – Desafio de Dados – Versão Airflow",
     "descricao": "📦 Trocando Dados com XCom: Como Funciona na Prática",
@@ -8,7 +44,8 @@
     "link": "posts/airflow-dia09.html",
     "desafio": "Airflow",
     "dia": 9,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia9.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia9.jpg",
+    "destaque": false
   },
   {
     "id": 8,
@@ -19,7 +56,8 @@
     "link": "posts/airflow-dia08.html",
     "desafio": "Airflow",
     "dia": 8,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia8.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia8.jpg",
+    "destaque": false
   },
   {
     "id": 7,
@@ -30,7 +68,8 @@
     "link": "posts/airflow-dia07.html",
     "desafio": "Airflow",
     "dia": 7,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia7.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia7.jpg",
+    "destaque": false
   },
   {
     "id": 6,
@@ -41,7 +80,8 @@
     "link": "posts/airflow-dia06.html",
     "desafio": "Airflow",
     "dia": 6,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia6.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia6.jpg",
+    "destaque": false
   },
   {
     "id": 5,
@@ -52,7 +92,8 @@
     "link": "posts/airflow-dia05.html",
     "desafio": "Airflow",
     "dia": 5,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia5.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia5.jpg",
+    "destaque": false
   },
   {
     "id": 4,
@@ -63,7 +104,8 @@
     "link": "posts/airflow-dia04.html",
     "desafio": "Airflow",
     "dia": 4,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia4.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia4.jpg",
+    "destaque": false
   },
   {
     "id": 3,
@@ -74,7 +116,8 @@
     "link": "posts/airflow-dia03.html",
     "desafio": "Airflow",
     "dia": 3,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia3.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia3.jpg",
+    "destaque": false
   },
   {
     "id": 2,
@@ -85,7 +128,8 @@
     "link": "posts/airflow-dia02.html",
     "desafio": "Airflow",
     "dia": 2,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia2.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia2.jpg",
+    "destaque": false
   },
   {
     "id": 1,
@@ -96,6 +140,7 @@
     "link": "posts/airflow-dia01.html",
     "desafio": "Airflow",
     "dia": 1,
-    "thumbnail": "assets/images/desafios/airflow/airflow-dia1.jpg"
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia1.jpg",
+    "destaque": false
   }
 ]

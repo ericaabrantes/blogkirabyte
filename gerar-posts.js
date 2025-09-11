@@ -22,7 +22,8 @@ files.forEach((file, index) => {
                  !l.startsWith("Data:") &&
                  !l.startsWith("Desafio:") &&
                  !l.startsWith("Dia:") &&
-                 !l.startsWith("Imagem:"))
+                 !l.startsWith("Imagem:") &&
+                 !l.startsWith("Destaque:"))
     .join("\n");
 
   // Converte só o conteúdo real em HTML
@@ -70,6 +71,10 @@ files.forEach((file, index) => {
   // Imagem principal
   const imgLine = lines.find(l => l.startsWith("Imagem:"));
   const imgPath = imgLine ? imgLine.replace("Imagem:", "").trim() : "assets/images/default.png";
+
+  // Destaque
+  const destaqueLine = lines.find(l => l.startsWith("Destaque:"));
+  const destaque = destaqueLine ? destaqueLine.replace("Destaque:", "").trim().toLowerCase() === "true" : false;
 
   // Caminhos diferentes para HTML e JSON
   const thumbnailForHtml = `../${imgPath}`;
@@ -160,7 +165,8 @@ files.forEach((file, index) => {
     link: `posts/${outFile}`,
     desafio,
     dia,
-    thumbnail: thumbnailForJson
+    thumbnail: thumbnailForJson,
+    destaque
   });
 
   console.log(`✅ Gerado: ${outFile}`);
