@@ -35,4 +35,31 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+  //Posts recentes
+  document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.getElementById("ultimos-posts");
+  
+    try {
+      const res = await fetch("posts.json");
+      if (!res.ok) throw new Error("Erro ao carregar posts.json");
+  
+      let posts = await res.json();
+  
+      // Pega só os 3 mais recentes
+      const recentes = posts.slice(0, 3);
+  
+      // Monta os artigos no mesmo estilo que você já tinha
+      container.innerHTML = recentes.map(post => `
+        <article class="post">
+          <h3><a href="${post.link}">${post.titulo}</a></h3>
+          <p class="meta">Publicado em ${new Date(post.data).toLocaleDateString("pt-BR")} | Categoria: ${post.categoria}</p>
+          <p>${post.descricao}</p>
+          <a href="${post.link}" class="btn">Ler mais</a>
+        </article>
+      `).join("");
+  
+    } catch (err) {
+      container.innerHTML = `<p>Erro: ${err.message}</p>`;
+    }
+  });
   
