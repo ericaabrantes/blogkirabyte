@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("ultimos-posts");
   
     try {
-      const res = await fetch("posts.json");
+      const res = await fetch("./posts.json");
       if (!res.ok) throw new Error("Erro ao carregar posts.json");
   
       let posts = await res.json();
