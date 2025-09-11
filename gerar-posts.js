@@ -80,7 +80,7 @@ files.forEach((file, index) => {
   const thumbnailForHtml = `../${imgPath}`;
   const thumbnailForJson = imgPath;
 
-  // Template do post
+  // Template do post único (usa .post-thumbnail)
   const template = `
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -91,7 +91,7 @@ files.forEach((file, index) => {
   <meta name="description" content="${descricao}">
   
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/posts.css">
+  <link rel="stylesheet" href="../css/post.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
@@ -155,7 +155,7 @@ files.forEach((file, index) => {
   // Salva HTML
   fs.writeFileSync(outPath, template, "utf-8");
 
-  // Metadados para posts.json
+  // Metadados para posts.json (usam .post-thumbnail-card nos cards)
   postsMeta.push({
     id: index + 1,
     titulo,
