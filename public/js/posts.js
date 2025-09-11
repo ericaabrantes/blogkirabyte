@@ -14,10 +14,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!res.ok) throw new Error("Erro ao carregar posts.json");
 
     posts = await res.json();
-    postsFiltrados = posts; // inicia mostrando todos
+    postsFiltrados = posts; // começa mostrando todos
 
-    // 🔹 Criar menu de categorias dinâmico
-    const categorias = ["Todos", ...new Set(posts.map(p => p.categoria))];
+    // 🔹 Extrair categorias únicas (suporta múltiplas categorias)
+    const categorias = ["Todos", ...new Set(posts.flatMap(p => p.categorias || []))];
+
+    // 🔹 Renderizar botões de categoria
     categoriasMenu.innerHTML = categorias.map(cat => `
       <button class="categoria-btn" data-categoria="${cat}">${cat}</button>
     `).join("");
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       postsContainer.innerHTML += proximaPagina.map(post => `
         <a href="${post.link}" class="destaque-card">
-          <span class="badge">${post.categoria}</span>
+          <span class="badge">${(post.categorias || []).join(", ")}</span>
           <img src="${post.thumbnail}" alt="${post.titulo}" />
           <h3>${post.titulo}</h3>
           <p>${post.descricao}</p>
@@ -50,17 +52,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    // Inicial (primeira página)
+    // 🔹 Render inicial
     renderPosts(true);
 
-    // 🔹 Clique em categoria
+    // 🔹 Clique em categorias
     categoriasMenu.addEventListener("click", e => {
       if (e.target.classList.contains("categoria-btn")) {
         const categoria = e.target.getAttribute("data-categoria");
 
         postsFiltrados = categoria === "Todos"
           ? posts
-          : posts.filter(p => p.categoria === categoria);
+          : posts.filter(p => (p.categorias || []).includes(categoria));
 
         // Atualiza active
         document.querySelectorAll(".categoria-btn").forEach(b => b.classList.remove("active"));
@@ -77,7 +79,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       postsFiltrados = posts.filter(p =>
         p.titulo.toLowerCase().includes(termo) ||
         p.descricao.toLowerCase().includes(termo) ||
-        p.categoria.toLowerCase().includes(termo)
+        (p.categorias || []).some(c => c.toLowerCase().includes(termo))
       );
 
       renderPosts(true);

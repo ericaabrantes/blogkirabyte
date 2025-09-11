@@ -3,7 +3,9 @@
     "id": 12,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-15T00:00:00.000Z",
     "link": "posts/pipeline-primeiro.html",
     "desafio": null,
@@ -15,7 +17,9 @@
     "id": 11,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
-    "categoria": "Lifestyle",
+    "categorias": [
+      "Lifestyle"
+    ],
     "data": "2025-08-25T00:00:00.000Z",
     "link": "posts/frontend-para-dados.html",
     "desafio": null,
@@ -27,7 +31,9 @@
     "id": 10,
     "titulo": "🔍 Entendendo o Apache Airflow",
     "descricao": "Primeiros passos com orquestração de workflows",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-20T00:00:00.000Z",
     "link": "posts/airflow-entendendo.html",
     "desafio": null,
@@ -39,7 +45,9 @@
     "id": 9,
     "titulo": "🎯 Dia 09 de 30 – Desafio de Dados – Versão Airflow",
     "descricao": "📦 Trocando Dados com XCom: Como Funciona na Prática",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-31T00:00:00.000Z",
     "link": "posts/airflow-dia09.html",
     "desafio": "Airflow",
@@ -51,7 +59,9 @@
     "id": 8,
     "titulo": "🎯 Dia 08 de 30 – Desafio de Dados – Versão Airflow",
     "descricao": "🔁 Controlando o Fluxo com ShortCircuitOperator",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-30T00:00:00.000Z",
     "link": "posts/airflow-dia08.html",
     "desafio": "Airflow",
@@ -63,7 +73,9 @@
     "id": 7,
     "titulo": "🎯 Dia 07 de 30 – Desafio de Dados – Versão Airflow",
     "descricao": "🧩 Organizando as Tarefas com TaskGroup!",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-29T00:00:00.000Z",
     "link": "posts/airflow-dia07.html",
     "desafio": "Airflow",
@@ -75,7 +87,9 @@
     "id": 6,
     "titulo": "🎯 Dia 06 de 30 – Desafio de Dados – Versão Airflow",
     "descricao": "🔄 Refatorando DAGs com Decorators – De Clássico ao Moderno! 🧹✨",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-28T00:00:00.000Z",
     "link": "posts/airflow-dia06.html",
     "desafio": "Airflow",
@@ -87,7 +101,9 @@
     "id": 5,
     "titulo": "🎯 Dia 05 de 30 - Desafio de Dados – Versão Airflow",
     "descricao": "🌿 Caminhos diferentes para cenários diferentes com BranchPythonOperator! 🌱🔀",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-27T00:00:00.000Z",
     "link": "posts/airflow-dia05.html",
     "desafio": "Airflow",
@@ -99,7 +115,9 @@
     "id": 4,
     "titulo": "🎯 Dia 04 de 30 - Desafio de Dados – Versão Airflow",
     "descricao": "🌬️ Explorando uma nova forma de criar DAGs com Decorators! ✨🐍",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-26T00:00:00.000Z",
     "link": "posts/airflow-dia04.html",
     "desafio": "Airflow",
@@ -111,7 +129,9 @@
     "id": 3,
     "titulo": "🎯 Dia 03 de 30 - Desafio de Dados – Versão Airflow",
     "descricao": "⚙️ Por dentro da arquitetura e componentes do Airflow 🧩🚦",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Aprendizado"
+    ],
     "data": "2025-08-25T00:00:00.000Z",
     "link": "posts/airflow-dia03.html",
     "desafio": "Airflow",
@@ -123,7 +143,12 @@
     "id": 2,
     "titulo": "🎯 Dia 02 de 30 - Desafio de Dados – Versão Airflow",
     "descricao": "🌬️ Fundamentos: Por que Airflow e o que ele realmente é? 🔍⚙️",
-    "categoria": "Aprendizado",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
     "data": "2025-08-24T00:00:00.000Z",
     "link": "posts/airflow-dia02.html",
     "desafio": "Airflow",
@@ -135,7 +160,12 @@
     "id": 1,
     "titulo": "🎯 Dia 01 de 30 - Desafio de Dados – Versão Airflow",
     "descricao": "🌬️ Preparando o Terreno com Docker e Compose! 🐳📦",
-    "categoria": "Desafios",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
     "data": "2025-08-23T00:00:00.000Z",
     "link": "posts/airflow-dia01.html",
     "desafio": "Airflow",

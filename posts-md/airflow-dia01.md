@@ -1,7 +1,7 @@
 # 🎯 Dia 01 de 30 - Desafio de Dados – Versão Airflow
 🌬️ Preparando o Terreno com Docker e Compose! 🐳📦
 
-Categoria: Desafios  
+Categoria: Desafios, Engenharia de Dados, Airflow, Aprendizado
 Data: 2025-08-23  
 Desafio: Airflow  
 Dia: 1  

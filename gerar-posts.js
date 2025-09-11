@@ -39,9 +39,15 @@ files.forEach((file, index) => {
   const titulo = lines[0] ? lines[0].replace(/^# /, "") : "Post sem título";
   const descricao = lines[1] || "Post no Kirabyte Blog";
 
-  // Categoria
-  const categoriaLine = lines.find(l => l.startsWith("Categoria:"));
-  const categoria = categoriaLine ? categoriaLine.replace("Categoria:", "").trim() : "Geral";
+// Categorias (pode ser uma ou várias, separadas por vírgula)
+const categoriaLine = lines.find(l => l.startsWith("Categoria:"));
+const categorias = categoriaLine
+  ? categoriaLine.replace("Categoria:", "")
+      .split(",")
+      .map(c => c.trim())
+      .filter(c => c.length > 0)
+  : ["Geral"];
+
 
   // Data
   const dataLine = lines.find(l => l.startsWith("Data:"));
@@ -80,7 +86,7 @@ files.forEach((file, index) => {
   const thumbnailForHtml = `../${imgPath}`;
   const thumbnailForJson = imgPath;
 
-  // Template do post único (usa .post-thumbnail)
+  // Template do post
   const template = `
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -115,7 +121,7 @@ files.forEach((file, index) => {
   <main class="container post-conteudo">
     <article>
       <p class="meta">
-        Publicado em ${dataFormatada} | Categoria: ${categoria}
+        Publicado em ${dataFormatada} | Categorias: ${categorias.join(", ")}
         ${desafio ? ` | Desafio: ${desafio}${dia ? ` (Dia ${dia})` : ""}` : ""}
       </p>
 
@@ -155,12 +161,12 @@ files.forEach((file, index) => {
   // Salva HTML
   fs.writeFileSync(outPath, template, "utf-8");
 
-  // Metadados para posts.json (usam .post-thumbnail-card nos cards)
+  // Metadados para posts.json
   postsMeta.push({
     id: index + 1,
     titulo,
     descricao,
-    categoria,
+    categorias,   // agora é array
     data: dataISO,
     link: `posts/${outFile}`,
     desafio,
@@ -168,7 +174,7 @@ files.forEach((file, index) => {
     thumbnail: thumbnailForJson,
     destaque
   });
-
+  
   console.log(`✅ Gerado: ${outFile}`);
 });
 

@@ -1,7 +1,7 @@
 # 🎯 Dia 02 de 30 - Desafio de Dados – Versão Airflow
 🌬️ Fundamentos: Por que Airflow e o que ele realmente é? 🔍⚙️
 
-Categoria: Aprendizado  
+Categoria: Desafios, Engenharia de Dados, Airflow, Aprendizado
 Data: 2025-08-24  
 Desafio: Airflow  
 Dia: 2  
