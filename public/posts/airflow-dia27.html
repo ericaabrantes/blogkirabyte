@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎯 Dia 27 de 30 - Desafio de Dados – Versão Airflow | Kirabyte Blog</title>
+  <meta name="description" content="🎯 Revisão prática: Consolidando DAGs com Decorators (`@dag` e `@task`)">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/post.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu Global -->
+  <nav class="menu-global">
+    <div class="container">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../posts.html" class="active">Posts</a></li>
+        <li><a href="../sobre-blog.html">Sobre o Blog</a></li>
+        <li><a href="../cursos.html">Cursos</a></li>
+        <li><a href="../guia.html">Guia</a></li>
+        <li><a href="../comunidade.html">Comunidade</a></li>
+        <li><a href="../desafios.html">Desafios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo do Post -->
+  <main class="container post-conteudo">
+    <article>
+      <p class="meta">
+        Publicado em 17 de setembro de 2025 | Categorias: Desafios, Engenharia de Dados, Airflow, Aprendizado
+         | Desafio: Airflow (Dia 27)
+      </p>
+
+      <img src="../assets/images/desafios/airflow/airflow-dia27.jpeg" alt="🎯 Dia 27 de 30 - Desafio de Dados – Versão Airflow" class="post-thumbnail" />
+
+      <div class="post-body">
+        <h1>🎯 Dia 27 de 30 - Desafio de Dados – Versão Airflow</h1>
+<p>🎯 Revisão prática: Consolidando DAGs com Decorators (<code>@dag</code> e <code>@task</code>)</p>
+<p>Hoje dediquei o tempo para revisar e consolidar o uso dos <strong>Decorators</strong> do Airflow 2+. Essa foi a oportunidade de refatorar DAGs antigas, aplicando o novo padrão — que é muito mais legível, enxuto e moderno.</p>
+<h2>📝 O que revisei e apliquei:</h2>
+<ul>
+<li>✅ <strong><code>@dag</code> e <code>@task</code></strong>: Entendi como eles transformam funções Python comuns em componentes de orquestração do Airflow, reduzindo o <em>boilerplate</em> code.</li>
+<li>✅ <strong>Parâmetros Padrão (<code>default_args</code>)</strong>: Confirmei a importância de usar o <code>default_args</code> para passar configurações comuns (como <code>owner</code>, <code>retries</code> e <code>retry_delay</code>) para todas as tarefas.</li>
+<li>✅ <strong>Criação com <code>schedule</code></strong>: Pratiquei a definição do agendamento (usando Cron ou <code>timedelta</code> como strings) diretamente no decorador <code>@dag</code>.</li>
+<li>✅ <strong>Datas e <code>pendulum</code></strong>: Reforcei o uso de <code>pendulum</code> para definir o <code>start_date</code>, garantindo que o fuso horário seja tratado corretamente e evitando problemas de agendamento.</li>
+<li>✅ <strong>Modularização com <code>.build()</code></strong>: Apliquei o conceito do Dia 24 para criar DAGs reutilizáveis e com diferentes versões.</li>
+</ul>
+<h2>✨ Reflexão do Dia</h2>
+<p>Saber <strong>refatorar</strong> é tão importante quanto criar. Migrar para os Decorators deixa o código das DAGs mais limpo, mais Pythonico e padronizado, facilitando a manutenção futura por mim ou pela minha equipe. É um grande passo para a maturidade de projeto.</p>
+<p>Quase lá! Foco total nos últimos dias!</p>
+<p>💫💻📚🌸🎯</p>
+<hr>
+<p>🦋 <strong>Dia 18/09/2025</strong>
+📌 Portfólio: <a href="https://ericaignatios.com.br">ericaignatios.com.br</a>
+📸 Instagram: <a href="https://instagram.com/ericaignatios">@ericaignatios</a>
+💻 GitHub: <a href="https://github.com/ericaabrantes">github.com/ericaabrantes</a></p>
+<p>🔗 <a href="https://www.linkedin.com/posts/ericaabrantesignatios_airflow-estudos-dados-activity-7375993192762118144-CHfk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD164bEBQp0olLnMAzq-FV4u5gT8pBJSSoc">Ver post no LinkedIn</a></p>
+
+      </div>
+    </article>
+
+    <!-- Botões de Compartilhamento -->
+    <div class="post-compartilhar">
+      <span>Compartilhe:</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://kirabyte.com.br/airflow-dia27.html" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="https://api.whatsapp.com/send?text=Olha%20esse%20post:%20https://kirabyte.com.br/airflow-dia27.html" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://twitter.com/intent/tweet?url=https://kirabyte.com.br/airflow-dia27.html&text=Olha%20esse%20post!" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+    </div>
+
+    <!-- Navegação -->
+    <div class="post-nav">
+      <a href="../posts.html" class="btn">⬅ Voltar para Posts</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kirabyte Blog | Criado por Érica Abrantes Ignatios 🌸</p>
+    <p>Visite também: <a href="https://www.ericaignatios.com.br" target="_blank">www.ericaignatios.com.br</a></p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

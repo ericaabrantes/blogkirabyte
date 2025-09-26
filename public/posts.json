@@ -1,6 +1,6 @@
 [
   {
-    "id": 12,
+    "id": 33,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": true
   },
   {
-    "id": 11,
+    "id": 32,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -28,7 +28,7 @@
     "destaque": true
   },
   {
-    "id": 10,
+    "id": 31,
     "titulo": "🔍 Entendendo o Apache Airflow",
     "descricao": "Primeiros passos com orquestração de workflows",
     "categorias": [
@@ -40,6 +40,363 @@
     "dia": null,
     "thumbnail": "assets/images/airflow-banner.jpg",
     "destaque": true
+  },
+  {
+    "id": 30,
+    "titulo": "🎯 Dia 30 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "Jornada concluída (e só começou!) 🚀🎉",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-22T00:00:00.000Z",
+    "link": "posts/airflow-dia30.html",
+    "desafio": "Airflow",
+    "dia": 30,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia30.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 29,
+    "titulo": "🎯 Dia 29 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🌸 Revisão prática: Branching e ShortCircuitOperator (Controle Condicional) 🚦",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-20T00:00:00.000Z",
+    "link": "posts/airflow-dia29.html",
+    "desafio": "Airflow",
+    "dia": 29,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia29.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 28,
+    "titulo": "🎯 Dia 28 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🌸 Revisão prática: XComs e comunicação fluida entre tasks 🗣️",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-19T00:00:00.000Z",
+    "link": "posts/airflow-dia28.html",
+    "desafio": "Airflow",
+    "dia": 28,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia28.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 27,
+    "titulo": "🎯 Dia 27 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🎯 Revisão prática: Consolidando DAGs com Decorators (`@dag` e `@task`)",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-18T00:00:00.000Z",
+    "link": "posts/airflow-dia27.html",
+    "desafio": "Airflow",
+    "dia": 27,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia27.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 26,
+    "titulo": "🎯 Dia 26 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "✨ Explorando Providers: O Segredo da Integração e Escalabilidade 📦",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-17T00:00:00.000Z",
+    "link": "posts/airflow-dia26.html",
+    "desafio": "Airflow",
+    "dia": 26,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia26.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 25,
+    "titulo": "🎯 Dia 25 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "📚 Trabalhando com Assets e Datasets no Airflow (v2.7+) 🔗",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-16T00:00:00.000Z",
+    "link": "posts/airflow-dia25.html",
+    "desafio": "Airflow",
+    "dia": 25,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia25.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 24,
+    "titulo": "🎯 Dia 24 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "📚 Criando versões da DAG com `.build()` (Abordagem Modular)",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-15T00:00:00.000Z",
+    "link": "posts/airflow-dia24.html",
+    "desafio": "Airflow",
+    "dia": 24,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia24.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 23,
+    "titulo": "🎯 Dia 23 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "📅 Callbacks no Airflow: controle total da DAG",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-14T00:00:00.000Z",
+    "link": "posts/airflow-dia23.html",
+    "desafio": "Airflow",
+    "dia": 23,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia23.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 22,
+    "titulo": "🎯 Dia 22 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "📈 Monitoramento e Observabilidade com Logs e Métricas 📊",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-13T00:00:00.000Z",
+    "link": "posts/airflow-dia22.html",
+    "desafio": "Airflow",
+    "dia": 22,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia22.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 21,
+    "titulo": "🎯 Dia 21 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🚨 Alertas por E-mail e Webhook com Callbacks! 📬🔗",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-12T00:00:00.000Z",
+    "link": "posts/airflow-dia21.html",
+    "desafio": "Airflow",
+    "dia": 21,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia21.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 20,
+    "titulo": "🎯 Dia 20 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🧹 Limpando DAGs antigas: manutenção e boas práticas 🧼📁",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-11T00:00:00.000Z",
+    "link": "posts/airflow-dia20.html",
+    "desafio": "Airflow",
+    "dia": 20,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia20.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 19,
+    "titulo": "🎯 Dia 19 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "⏰ Sensor de Tempo: TimeSensor e TimeDeltaSensor 🕒",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-10T00:00:00.000Z",
+    "link": "posts/airflow-dia19.html",
+    "desafio": "Airflow",
+    "dia": 19,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia19.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 18,
+    "titulo": "🎯 Dia 18 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🔐 Conexões com Bancos, APIs e Servidores via Airflow Connections 🔗",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-09T00:00:00.000Z",
+    "link": "posts/airflow-dia18.html",
+    "desafio": "Airflow",
+    "dia": 18,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia18.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 17,
+    "titulo": "🎯 Dia 17 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🔄 Dependência entre DAGs com ExternalTaskSensor 🪢",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-08T00:00:00.000Z",
+    "link": "posts/airflow-dia17.html",
+    "desafio": "Airflow",
+    "dia": 17,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia17.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 16,
+    "titulo": "🎯 Dia 16 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "📡 Detectando Arquivos com FileSensor! 🗃️🕵️‍♀️",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-07T00:00:00.000Z",
+    "link": "posts/airflow-dia16.html",
+    "desafio": "Airflow",
+    "dia": 16,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia16.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 15,
+    "titulo": "🎯 Dia 15 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🔄 Integração com Scripts Externos (PowerShell e Shell) 💻🛠️",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-06T00:00:00.000Z",
+    "link": "posts/airflow-dia15.html",
+    "desafio": "Airflow",
+    "dia": 15,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia15.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 14,
+    "titulo": "🎯 Dia 14 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🗂️ Refatoração Modular: Separando as Funções em `utils/`! 🧱📦",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-05T00:00:00.000Z",
+    "link": "posts/airflow-dia14.html",
+    "desafio": "Airflow",
+    "dia": 14,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia14.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 13,
+    "titulo": "🎯 Dia 13 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "⚙️ Airflow Variables e Parametrização de DAGs! 🧬💡",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-04T00:00:00.000Z",
+    "link": "posts/airflow-dia13.html",
+    "desafio": "Airflow",
+    "dia": 13,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia13.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 12,
+    "titulo": "🎯 Dia 12 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🧪 Testando DAGs com `airflow tasks test` e `airflow dags test` 🛠️🔁",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-03T00:00:00.000Z",
+    "link": "posts/airflow-dia12.html",
+    "desafio": "Airflow",
+    "dia": 12,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia12.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 11,
+    "titulo": "🎯 Dia 11 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🔍 Navegando pelos Logs do Airflow com Eficiência! 📜🔎",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-02T00:00:00.000Z",
+    "link": "posts/airflow-dia11.html",
+    "desafio": "Airflow",
+    "dia": 11,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia11.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 10,
+    "titulo": "🎯 Dia 10 de 30 - Desafio de Dados – Versão Airflow",
+    "descricao": "🧠 Trigger Rules: Controlando a Execução com Regras",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Airflow",
+      "Aprendizado"
+    ],
+    "data": "2025-09-01T00:00:00.000Z",
+    "link": "posts/airflow-dia10.html",
+    "desafio": "Airflow",
+    "dia": 10,
+    "thumbnail": "assets/images/desafios/airflow/airflow-dia10.jpg",
+    "destaque": false
   },
   {
     "id": 9,
