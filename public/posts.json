@@ -1,6 +1,6 @@
 [
   {
-    "id": 40,
+    "id": 41,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": true
   },
   {
-    "id": 39,
+    "id": 40,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -26,6 +26,23 @@
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
     "destaque": true
+  },
+  {
+    "id": 39,
+    "titulo": "📅 Dia 8 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Entidades Relacionais: Onde Dados e Catálogo se Encontram",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Unity Catalog"
+    ],
+    "data": "2025-11-14T00:00:00.000Z",
+    "link": "posts/databricks-dia08.html",
+    "desafio": "Databricks",
+    "dia": 8,
+    "thumbnail": "assets/images/desafios/databricks/dia08databricks.jpeg",
+    "destaque": false
   },
   {
     "id": 38,
