@@ -1,6 +1,6 @@
 [
   {
-    "id": 33,
+    "id": 40,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": true
   },
   {
-    "id": 32,
+    "id": 39,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -25,6 +25,124 @@
     "desafio": null,
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
+    "destaque": true
+  },
+  {
+    "id": 38,
+    "titulo": "📅 Dia 7 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Otimizando a Leitura: Optimize e ZORDER",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Performance"
+    ],
+    "data": "2025-11-13T00:00:00.000Z",
+    "link": "posts/databricks-dia07.html",
+    "desafio": "Databricks",
+    "dia": 7,
+    "thumbnail": "assets/images/desafios/databricks/dia07databricks.jpeg",
+    "destaque": true
+  },
+  {
+    "id": 37,
+    "titulo": "📅 Dia 6 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Recursos Avançados: Governança do Esquema",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Governança"
+    ],
+    "data": "2025-11-12T00:00:00.000Z",
+    "link": "posts/databricks-dia06.html",
+    "desafio": "Databricks",
+    "dia": 6,
+    "thumbnail": "assets/images/desafios/databricks/dia06databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 36,
+    "titulo": "📅 Dia 5 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Mão na Massa com Delta Tables: Versionamento",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Delta Lake"
+    ],
+    "data": "2025-11-11T00:00:00.000Z",
+    "link": "posts/databricks-dia05.html",
+    "desafio": "Databricks",
+    "dia": 5,
+    "thumbnail": "assets/images/desafios/databricks/dia05databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 35,
+    "titulo": "📅 Dia 4 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Delta Lake: O Foco na Confiabilidade (ACID)",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Delta Lake"
+    ],
+    "data": "2025-11-10T00:00:00.000Z",
+    "link": "posts/databricks-dia04.html",
+    "desafio": "Databricks",
+    "dia": 4,
+    "thumbnail": "assets/images/desafios/databricks/dia04databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 34,
+    "titulo": "📅 Dia 3 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Clusters e Computação: O Motor do Databricks",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Cloud"
+    ],
+    "data": "2025-11-09T00:00:00.000Z",
+    "link": "posts/databricks-dia03.html",
+    "desafio": "Databricks",
+    "dia": 3,
+    "thumbnail": "assets/images/desafios/databricks/dia03databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 33,
+    "titulo": "📅 Dia 2 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Plataforma Databricks: Navegando no Workspace e Notebooks",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks"
+    ],
+    "data": "2025-11-08T00:00:00.000Z",
+    "link": "posts/databricks-dia02.html",
+    "desafio": "Databricks",
+    "dia": 2,
+    "thumbnail": "assets/images/desafios/databricks/dia02databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 32,
+    "titulo": "📅 Dia 1 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Lakehouse Architecture: O Futuro da Engenharia de Dados",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Lakehouse"
+    ],
+    "data": "2025-11-07T00:00:00.000Z",
+    "link": "posts/databricks-dia01.html",
+    "desafio": "Databricks",
+    "dia": 1,
+    "thumbnail": "assets/images/desafios/databricks/dia01databricks.jpeg",
     "destaque": true
   },
   {
