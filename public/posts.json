@@ -1,6 +1,6 @@
 [
   {
-    "id": 41,
+    "id": 43,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": true
   },
   {
-    "id": 40,
+    "id": 42,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -26,6 +26,40 @@
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
     "destaque": true
+  },
+  {
+    "id": 41,
+    "titulo": "📅 Dia 10 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Consultando Arquivos na Fonte: Data Lake Querying",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "SQL"
+    ],
+    "data": "2025-11-16T00:00:00.000Z",
+    "link": "posts/databricks-dia10.html",
+    "desafio": "Databricks",
+    "dia": 10,
+    "thumbnail": "assets/images/desafios/databricks/dia10databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 40,
+    "titulo": "📅 Dia 9 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Configurando Delta Tables e a Força das Views",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "SQL"
+    ],
+    "data": "2025-11-15T00:00:00.000Z",
+    "link": "posts/databricks-dia09.html",
+    "desafio": "Databricks",
+    "dia": 9,
+    "thumbnail": "assets/images/desafios/databricks/dia09databricks.jpeg",
+    "destaque": false
   },
   {
     "id": 39,
