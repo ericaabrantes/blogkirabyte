@@ -4,7 +4,7 @@ Minha transição de carreira
 Categoria: Lifestyle  
 Data: 2025-08-25  
 Imagem: assets/images/post3.jpg  
-Destaque: true  
+Destaque: false
 
 Comecei minha jornada na tecnologia pelo front-end, apaixonada por design e usabilidade.  
 Com o tempo, percebi que meu verdadeiro interesse estava nos **dados que movimentam as aplicações**.  

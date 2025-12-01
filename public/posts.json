@@ -1,6 +1,6 @@
 [
   {
-    "id": 43,
+    "id": 45,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": true
   },
   {
-    "id": 42,
+    "id": 44,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -26,6 +26,40 @@
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
     "destaque": true
+  },
+  {
+    "id": 43,
+    "titulo": "📅 Dia 12 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Transformações Avançadas: Manipulando Complexidade",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "PySpark"
+    ],
+    "data": "2025-11-18T00:00:00.000Z",
+    "link": "posts/databricks-dia12.html",
+    "desafio": "Databricks",
+    "dia": 12,
+    "thumbnail": "assets/images/desafios/databricks/dia12databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 42,
+    "titulo": "📅 Dia 11 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Otimizando a Escrita: O Poder do MERGE INTO",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "SQL"
+    ],
+    "data": "2025-11-17T00:00:00.000Z",
+    "link": "posts/databricks-dia11.html",
+    "desafio": "Databricks",
+    "dia": 11,
+    "thumbnail": "assets/images/desafios/databricks/dia11databricks.jpeg",
+    "destaque": false
   },
   {
     "id": 41,
