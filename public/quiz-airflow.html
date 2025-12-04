@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: Airflow | Kirabyte Blog</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/quiz.css"> 
+</head>
+<body>
+
+  <nav class="menu-global">
+    <div class="container">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="posts.html">Posts</a></li> 
+        <li><a href="sobre-blog.html">Sobre o Blog</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="desafios.html">Desafios</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="hero" style="background: linear-gradient(135deg, #00C7D4 0%, #007A85 100%); color: white;">
+    <div class="container text-center">
+      <h2>🌬️ Desafio Airflow</h2> <p>Teste seus conhecimentos para a orquestração de dados.</p>
+    </div>
+  </section>
+
+  <main class="quiz-wrapper">
+    <div class="quiz-container">
+        
+        <div id="quiz-screen">
+            <div class="header-quiz">
+                <h2 id="topic-title" style="color: #007A85;">Airflow Fundamentals</h2>
+                <span class="score-display">Questão <span id="current-q">1</span>/<span id="total-q">5</span></span>
+            </div>
+
+            <div class="question-text" id="question">Carregando...</div>
+            
+            <div id="options-container">
+                </div>
+
+            <div class="explanation" id="explanation" style="border-left-color: #007A85;">
+                <span id="explanation-text"></span>
+            </div>
+
+            <button class="btn-next" id="next-btn" onclick="nextQuestion()" style="background-color: #007A85;">Próxima Pergunta <i class="bi bi-arrow-right"></i></button>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div id="result-screen" class="result-screen">
+            <h3 style="color: #007A85;">Quiz Finalizado! 🌬️</h3>
+            <p>Sua pontuação final foi:</p>
+            <h1 style="font-size: 3rem; margin: 10px 0; color: var(--preto-suave);">
+                <span id="final-score">0</span>/<span id="final-total">0</span>
+            </h1>
+            <p>Revise os conceitos e tente novamente para fixar!</p>
+            
+            <button class="btn" onclick="restartQuiz()" style="background-color: #007A85; border: none;">Reiniciar Quiz</button>
+            <br><br>
+            
+            <a href="quizzes.html" style="color: #007A85;">Voltar para Quizzes</a>
+        </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Kirabyte Blog | Criado por Érica Abrantes Ignatios 🌸</p>
+    <p>Visite também: <a href="https://www.ericaignatios.com.br" target="_blank">www.ericaignatios.com.br</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script> 
+  
+  <script src="js/quiz-airflow.js"></script> 
+</body>
+</html>
