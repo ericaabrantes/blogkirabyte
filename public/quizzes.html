@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzes & Simulados | Kirabyte Blog</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <nav class="menu-global">
+    <div class="container">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="menu-links" id="menu-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="posts.html">Posts</a></li> 
+        <li><a href="sobre-blog.html">Sobre o Blog</a></li>
+        <!-- <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="guia.html">Guia</a></li> -->
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <!-- <li><a href="comunidade.html">Comunidade</a></li> -->
+        <li><a href="desafios.html">Desafios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container quiz-hub-page">
+    <div class="text-center mb-5">
+      <h2 style="color: var(--rosa-principal);">🧠 Teste seus Conhecimentos</h2>
+      <p>Simulados práticos para fixar o aprendizado em Engenharia de Dados. Escolha um tema e boa sorte! 🍀</p>
+    </div>
+
+    <div class="quiz-grid">
+      
+      <a href="quiz-databricks.html" class="quiz-card">
+        <div class="card-thumb databricks-bg">
+            <i class="bi bi-bricks"></i>
+        </div>
+        <div class="card-content">
+            <h3>Databricks Associate</h3>
+            <p>Questões sobre Lakehouse, Delta Lake, Spark e Arquitetura Medallion. Baseado na prova oficial.</p>
+            <span class="tag">Simulado</span>
+        </div>
+      </a>
+
+      <a href="quiz-airflow.html" class="quiz-card">
+        <div class="card-thumb airflow-bg">
+            <i class="bi bi-wind"></i>
+        </div>
+        <div class="card-content">
+            <h3>Apache Airflow</h3>
+            <p>Desafie-se sobre DAGs, Operators, Sensors e orquestração de pipelines.</p>
+            <span class="tag">Em Breve</span>
+        </div>
+      </a>
+
+       <a href="#" class="quiz-card" style="opacity: 0.6; cursor: not-allowed;">
+        <div class="card-thumb sql-bg">
+            <i class="bi bi-database"></i>
+        </div>
+        <div class="card-content">
+            <h3>Desafios SQL</h3>
+            <p>Consultas complexas, Window Functions e otimização de queries.</p>
+            <span class="tag">Em construção</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Kirabyte Blog | Criado por Érica Abrantes Ignatios 🌸</p>
+    <p>Visite também: <a href="https://www.ericaignatios.com.br" target="_blank">www.ericaignatios.com.br</a></p>
+  </footer>
+  
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

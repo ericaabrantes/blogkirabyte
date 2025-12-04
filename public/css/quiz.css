@@ -1,0 +1,201 @@
+/* =========================================
+   PARTE 1: Interface do Quiz (A Prova)
+   ========================================= */
+
+/* Wrapper principal que centraliza o quiz na tela */
+.quiz-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 60vh;
+}
+
+/* O cartão branco onde ficam as perguntas */
+.quiz-container {
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    border: 1px solid var(--rosa-claro);
+}
+
+/* Cabeçalho interno (Título e contador 1/10) */
+.header-quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--rosa-claro);
+    padding-bottom: 10px;
+}
+
+.header-quiz h2 { 
+    margin: 0; 
+    color: var(--rosa-principal); 
+    font-size: 1.5rem; 
+}
+
+.score-display { 
+    font-weight: bold; 
+    color: var(--preto-suave); 
+}
+
+/* Texto da Pergunta */
+.question-text {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--preto-suave);
+}
+
+/* Botões das Opções */
+.option-btn {
+    background-color: #f9f9f9;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--preto-suave);
+}
+
+.option-btn:hover:not([disabled]) {
+    border-color: var(--rosa-principal);
+    background-color: var(--rosa-claro);
+}
+
+/* Cores de Feedback (Certo/Errado) */
+.option-btn.correct {
+    background-color: #d1fae5;
+    border-color: #10b981;
+    color: #065f46;
+}
+
+.option-btn.wrong {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+}
+
+/* Caixa de Explicação */
+.explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--rosa-claro);
+    border-left: 4px solid var(--rosa-principal);
+    border-radius: 4px;
+    display: none;
+    font-size: 0.95rem;
+}
+
+/* Botão Próxima */
+.btn-next {
+    background-color: var(--rosa-principal);
+    color: var(--branco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    margin-top: 20px;
+    float: right;
+}
+
+.btn-next:hover {
+    background-color: #d81b60;
+}
+
+/* Tela de Resultado Final */
+.result-screen { text-align: center; display: none; }
+.result-screen h3 { font-size: 2rem; color: var(--rosa-principal); }
+
+
+/* =========================================
+   PARTE 2: Vitrine dos Quizzes (Página quizzes.html)
+   ========================================= */
+
+.quiz-hub-page {
+    padding: 3rem 1.5rem;
+    min-height: 70vh;
+}
+
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.quiz-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--branco);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--preto-suave);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.quiz-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(233, 30, 99, 0.15); /* Sombra rosada */
+    border-color: var(--rosa-claro);
+}
+
+/* Área da Imagem/Ícone */
+.card-thumb {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Cores específicas para cada tema dos cards */
+.databricks-bg { background: linear-gradient(135deg, #FF3621 0%, #E91E63 100%); } /* Laranja/Vermelho Databricks */
+.airflow-bg { background: linear-gradient(135deg, #00C7D4 0%, #007A85 100%); } /* Azul Airflow */
+.sql-bg { background: linear-gradient(135deg, #424242 0%, #212121 100%); }
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--rosa-principal);
+    font-size: 1.25rem;
+}
+
+.quiz-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--rosa-claro);
+    color: var(--rosa-principal);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-top: auto; 
+}
