@@ -1,6 +1,6 @@
 [
   {
-    "id": 45,
+    "id": 48,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -11,10 +11,10 @@
     "desafio": null,
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
-    "destaque": true
+    "destaque": false
   },
   {
-    "id": 44,
+    "id": 47,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -25,7 +25,58 @@
     "desafio": null,
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
-    "destaque": true
+    "destaque": false
+  },
+  {
+    "id": 46,
+    "titulo": "📅 Dia 15 de 30 Desafio de dados Versão Databricks",
+    "descricao": "✨ Ingestão Incremental com Auto Loader",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Streaming"
+    ],
+    "data": "2025-11-21T00:00:00.000Z",
+    "link": "posts/databricks-dia15.html",
+    "desafio": "Databricks",
+    "dia": 15,
+    "thumbnail": "assets/images/desafios/databricks/dia15databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 45,
+    "titulo": "📅 Dia 14 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Fundamentos de Streaming: Processamento em Tempo Real",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Streaming"
+    ],
+    "data": "2025-11-20T00:00:00.000Z",
+    "link": "posts/databricks-dia14.html",
+    "desafio": "Databricks",
+    "dia": 14,
+    "thumbnail": "assets/images/desafios/databricks/dia14databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 44,
+    "titulo": "📅 Dia 13 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Extensibilidade e Flexibilidade: UDFs e Higher Order Functions",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Spark SQL"
+    ],
+    "data": "2025-11-19T00:00:00.000Z",
+    "link": "posts/databricks-dia13.html",
+    "desafio": "Databricks",
+    "dia": 13,
+    "thumbnail": "assets/images/desafios/databricks/dia13databricks.jpeg",
+    "destaque": false
   },
   {
     "id": 43,
