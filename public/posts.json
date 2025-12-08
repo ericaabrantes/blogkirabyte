@@ -1,6 +1,6 @@
 [
   {
-    "id": 48,
+    "id": 49,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": false
   },
   {
-    "id": 47,
+    "id": 48,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -25,6 +25,23 @@
     "desafio": null,
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
+    "destaque": false
+  },
+  {
+    "id": 47,
+    "titulo": "📅 Dia 16 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Configurações do Auto Loader e o Rescue Data",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Auto Loader"
+    ],
+    "data": "2025-11-22T00:00:00.000Z",
+    "link": "posts/databricks-dia16.html",
+    "desafio": "Databricks",
+    "dia": 16,
+    "thumbnail": "assets/images/desafios/databricks/dia16databricks.jpeg",
     "destaque": false
   },
   {
