@@ -1,6 +1,6 @@
 [
   {
-    "id": 49,
+    "id": 63,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -14,7 +14,7 @@
     "destaque": false
   },
   {
-    "id": 48,
+    "id": 62,
     "titulo": "☕ Do Front-end para a Engenharia de Dados",
     "descricao": "Minha transição de carreira",
     "categorias": [
@@ -25,6 +25,255 @@
     "desafio": null,
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
+    "destaque": false
+  },
+  {
+    "id": 61,
+    "titulo": "📅 Dia 30 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Conclusão: 30 Dias de Imersão no Lakehouse",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Conclusão",
+      "Lakehouse"
+    ],
+    "data": "2025-12-06T00:00:00.000Z",
+    "link": "posts/databricks-dia30.html",
+    "desafio": "Databricks",
+    "dia": 30,
+    "thumbnail": "assets/images/desafios/databricks/dia30databricks.jpeg",
+    "destaque": true
+  },
+  {
+    "id": 60,
+    "titulo": "📅 Dia 29 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Revisão Focada III: Otimização e Controle do Delta Lake",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Delta Lake",
+      "Revisão"
+    ],
+    "data": "2025-12-05T00:00:00.000Z",
+    "link": "posts/databricks-dia29.html",
+    "desafio": "Databricks",
+    "dia": 29,
+    "thumbnail": "assets/images/desafios/databricks/dia29databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 59,
+    "titulo": "📅 Dia 28 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Revisão Focada II: DLT e Produção",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "DLT",
+      "Revisão"
+    ],
+    "data": "2025-12-04T00:00:00.000Z",
+    "link": "posts/databricks-dia28.html",
+    "desafio": "Databricks",
+    "dia": 28,
+    "thumbnail": "assets/images/desafios/databricks/dia28databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 58,
+    "titulo": "📅 Dia 27 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Revisão Focada I: Ingestão e PySpark",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "PySpark",
+      "Revisão"
+    ],
+    "data": "2025-12-03T00:00:00.000Z",
+    "link": "posts/databricks-dia27.html",
+    "desafio": "Databricks",
+    "dia": 27,
+    "thumbnail": "assets/images/desafios/databricks/dia27databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 57,
+    "titulo": "📅 Dia 26 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Cluster Best Practices: Otimização de Custo e Performance",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Otimização",
+      "Cloud"
+    ],
+    "data": "2025-12-02T00:00:00.000Z",
+    "link": "posts/databricks-dia26.html",
+    "desafio": "Databricks",
+    "dia": 26,
+    "thumbnail": "assets/images/desafios/databricks/dia26databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 56,
+    "titulo": "📅 Dia 25 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Compartilhamento de Dados com Delta Sharing e Federation",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Governança",
+      "Sharing"
+    ],
+    "data": "2025-12-01T00:00:00.000Z",
+    "link": "posts/databricks-dia25.html",
+    "desafio": "Databricks",
+    "dia": 25,
+    "thumbnail": "assets/images/desafios/databricks/dia25databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 55,
+    "titulo": "📅 Dia 24 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Unity Catalog: O Centro de Governança do Lakehouse",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Governança",
+      "Unity Catalog"
+    ],
+    "data": "2025-11-30T00:00:00.000Z",
+    "link": "posts/databricks-dia24.html",
+    "desafio": "Databricks",
+    "dia": 24,
+    "thumbnail": "assets/images/desafios/databricks/dia24databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 54,
+    "titulo": "📅 Dia 23 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Gerenciamento de Acesso: Privilégios no Nível do Objeto",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Segurança",
+      "Governança"
+    ],
+    "data": "2025-11-29T00:00:00.000Z",
+    "link": "posts/databricks-dia23.html",
+    "desafio": "Databricks",
+    "dia": 23,
+    "thumbnail": "assets/images/desafios/databricks/dia23databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 53,
+    "titulo": "📅 Dia 22 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Databricks SQL: Análise de Alta Performance",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "SQL",
+      "BI"
+    ],
+    "data": "2025-11-28T00:00:00.000Z",
+    "link": "posts/databricks-dia22.html",
+    "desafio": "Databricks",
+    "dia": 22,
+    "thumbnail": "assets/images/desafios/databricks/dia22databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 52,
+    "titulo": "📅 Dia 21 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Deploying Jobs com Databricks Asset Bundles (DAB)",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "CI/CD",
+      "IaC"
+    ],
+    "data": "2025-11-27T00:00:00.000Z",
+    "link": "posts/databricks-dia21.html",
+    "desafio": "Databricks",
+    "dia": 21,
+    "thumbnail": "assets/images/desafios/databricks/dia21databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 51,
+    "titulo": "📅 Dia 20 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Lakeflow Jobs: Agendamento e Orquestração",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Orquestração"
+    ],
+    "data": "2025-11-26T00:00:00.000Z",
+    "link": "posts/databricks-dia20.html",
+    "desafio": "Databricks",
+    "dia": 20,
+    "thumbnail": "assets/images/desafios/databricks/dia20databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 50,
+    "titulo": "📅 Dia 19 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Processando CDC com Facilidade no DLT",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "CDC",
+      "DLT"
+    ],
+    "data": "2025-11-25T00:00:00.000Z",
+    "link": "posts/databricks-dia19.html",
+    "desafio": "Databricks",
+    "dia": 19,
+    "thumbnail": "assets/images/desafios/databricks/dia19databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 49,
+    "titulo": "📅 Dia 18 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ DLT: Pipelines Declarativos e Simplificados",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "DLT"
+    ],
+    "data": "2025-11-24T00:00:00.000Z",
+    "link": "posts/databricks-dia18.html",
+    "desafio": "Databricks",
+    "dia": 18,
+    "thumbnail": "assets/images/desafios/databricks/dia18databricks.jpeg",
+    "destaque": false
+  },
+  {
+    "id": 48,
+    "titulo": "📅 Dia 17 de 30 - Desafio de Dados: Versão Databricks",
+    "descricao": "✨ Arquitetura Multi-Hop: Organizando o Lakehouse",
+    "categorias": [
+      "Desafios",
+      "Engenharia de Dados",
+      "Databricks",
+      "Arquitetura"
+    ],
+    "data": "2025-11-23T00:00:00.000Z",
+    "link": "posts/databricks-dia17.html",
+    "desafio": "Databricks",
+    "dia": 17,
+    "thumbnail": "assets/images/desafios/databricks/dia17databricks.jpeg",
     "destaque": false
   },
   {
