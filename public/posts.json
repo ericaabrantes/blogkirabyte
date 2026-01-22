@@ -1,6 +1,6 @@
 [
   {
-    "id": 63,
+    "id": 64,
     "titulo": "#🚀 Como criei meu primeiro pipeline de dados",
     "descricao": "Aprendendo passo a passo na prática",
     "categorias": [
@@ -12,6 +12,23 @@
     "dia": null,
     "thumbnail": "assets/images/post3.jpg",
     "destaque": false
+  },
+  {
+    "id": 63,
+    "titulo": "🏆 Como passei na certificação Databricks: Guia Completo",
+    "descricao": "Recentemente, compartilhei com vocês que fui aprovada no exame da Databricks, e a pergunta que mais recebi foi: \"O que você estudou para passar?\". Para ajudar quem está nessa jornada, liberei o mapa da mina!",
+    "categorias": [
+      "Carreira",
+      "Certificação",
+      "Databricks",
+      "Estudo"
+    ],
+    "data": "2026-01-22T00:00:00.000Z",
+    "link": "posts/guia-certificacao-databricks.html",
+    "desafio": null,
+    "dia": null,
+    "thumbnail": "assets/images/certificacaodatabricks.jpeg",
+    "destaque": true
   },
   {
     "id": 62,
